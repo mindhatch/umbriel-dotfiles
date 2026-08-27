@@ -1,16 +1,13 @@
 [general]
 autostart = [
 	"dbus-update-activation-environment --all",
-  	"noctalia --daemon &",
-	"noctalia msg brightness-set 69",
-	"noctalia msg keyboard-backlight-set 5",
+  	"noctalia --daemon",
   	"kitty -1 --start-as=hidden &",
 	"mpd &",
   	"pipewire &",
   	"pipewire-pulse &",
 	"wl-clip-persist -c both &",
-  	"~/.scripts/./autostart &",
-	"umbriel window-focus-left"
+  	"~/.scripts/./autostart &"
 ]
 
 xwayland = false
