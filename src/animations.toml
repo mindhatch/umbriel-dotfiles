@@ -1,0 +1,53 @@
+[animation]
+enabled = true
+# duration_ms = 200
+# curve = "snappy"
+
+[animation.windows_in]
+enabled = true
+duration_ms = 500
+curve = "ease"
+style = "zoom"         # "popin", "zoom", "slide", "fade", or "none"
+# scale = 0.5          # 0.1-1.0, used by "popin"
+
+[animation.windows_out]
+enabled = true
+duration_ms = 500
+curve = "easeout"
+style = "slide"        # "fade" or "slide"
+
+[animation.windows_move]
+enabled = true
+duration_ms = 350
+curve = "ease"
+
+[animation.workspaces]
+enabled = true
+duration_ms = 350
+curve = "ease"
+
+[animation.scratchpad]
+enabled = true
+duration_ms = 350
+curve = "ease"
+dim = 0.0             # 0.0-1.0
+blur = false          # requires appearance.blur.enabled
+scale = 0.6667        # 0 preserves geometry; 0.1-1.0 sizes and centers on entry
+maximize = false      # maximize to edges on entry
+fullscreen = false    # fullscreen on entry
+
+[animation.border]
+enabled = true
+duration_ms = 750
+curve = "ease"
+
+[animation.dim_unfocused]
+enabled = true
+duration_ms = 750
+curve = "easeout"
+dim = 0.1             # 0.0-1.0
+
+[animation.layers]
+enabled = true
+duration_ms = 500
+curve = "ease"

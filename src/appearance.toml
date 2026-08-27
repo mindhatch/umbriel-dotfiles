@@ -1,0 +1,50 @@
+[appearance]
+prefer_no_csd = true
+border_width = 4               # 0-100
+outer_border_width = 16        # 0-100
+corner_radius = 16             # 0-100
+
+[appearance.blur]
+enabled = true
+optimized = true
+passes = 3                     # 0-8
+radius = 3                     # 0-100
+noise = 0.02                   # 0.0-1.0
+brightness = 0.9               # 0.0-2.0
+contrast = 0.9                 # 0.0-2.0
+saturation = 1.1
+
+[appearance.shadow]
+enabled = false
+softness = 10                  # 0-200, 0 = hard edge
+offset_x = 0                   # -200 to 200
+offset_y = 0
+color = "#0000007F"
+
+[layout]
+mode = "scrolling"
+gap = 16
+
+[layout.scrolling]
+direction = "horizontal"
+default_width_fraction = 0.5
+center_underfull_strip = true
+
+[layout.master]
+position = "left"
+default_width_fraction = 0.6
+
+[overview]
+zoom = 0.5
+background_blur = true
+background_tint = "#10101430"
+workspace_background = "#00000044"
+
+[output.eDP-1]
+mode = "2304x1440@59.945"
+position = [0, 0]
+workspaces = ["一", "二", "三", "四", "五"]
+
+[[workspace]]
+name = "三"
+layout.mode = "master"

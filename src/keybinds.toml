@@ -1,0 +1,88 @@
+[keybinds]
+
+# Applications
+
+"Mod+M" = "spawn:sone"
+"Mod+B" = "spawn:helium"
+"Mod+Shift+B" = "spawn:zen"
+"Mod+Z" = "spawn:foot yazi"
+"Mod+Return" = "spawn:kitty -1"
+"Mod+Semicolon" = "spawn:hyprpicker -a -c"
+
+"Mod+Backslash" = "scratchpad-toggle"
+"Mod+Shift+Backslash" = "scratchpad-focus-next"
+"Mod+Bracketright" = "window-move-to-scratchpad"
+"Mod+Bracketleft" = "window-restore-from-scratchpad"
+
+# Noctalia msg actions
+
+"Mod+S" = "spawn:noctalia msg screenshot-region"
+"Mod+Ctrl+S" = "spawn:noctalia msg screenshot-fullscreen"
+"Mod+Shift+D" = "spawn:noctalia msg theme-mode-toggle"
+
+"Mod+Shift+S" = "spawn:noctalia msg settings-toggle"
+"Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Shift+Escape" = "spawn:noctalia msg panel-toggle session"
+"Mod+Shift+C" = "spawn:noctalia msg panel-toggle control-center"
+"Mod+Shift+V" = "spawn:noctalia msg panel-toggle panel-toggle clipboard"
+"Mod+Shift+N" = "spawn:noctalia msg panel-toggle control-center notifications"
+"Mod+Ctrl+R" = "spawn:noctalia msg plugin noctalia/screen_recorder:service all toggle portal"
+"Mod+Shift+R" = "spawn:noctalia msg plugin noctalia/screen_recorder:service all toggle focused"
+
+# Media and brightness
+
+XF86AudioNext = "spawn:playerctl next"
+XF86AudioPrev = "spawn:playerctl previous"
+XF86AudioPlay = "spawn:playerctl play-pause"
+XF86AudioMute = "spawn:noctalia msg volume-mute"
+
+XF86AudioRaiseVolume = "spawn:noctalia msg volume-up 5"
+XF86AudioLowerVolume = "spawn:noctalia msg volume-down 5"
+
+XF86MonBrightnessUp = "spawn:brightnessctl set 5%+"
+XF86MonBrightnessDown = "spawn:brightnessctl set 5%-"
+XF86KbdBrightnessUp = "spawn:brightnessctl -d '*kbd_backlight*' set 5%+"
+XF86KbdBrightnessDown = "spawn:brightnessctl -d '*kbd_backlight*' set 5%-"
+
+# Workspace and window actions
+
+"Mod+Shift+Q" = "window-close"
+
+"Mod+Up" = "window-focus-up"
+"Mod+Down" = "window-focus-down"
+"Mod+Left" = "window-focus-left"
+"Mod+Right" = "window-focus-right"
+
+"Mod+Comma" = "window-consume-left"
+"Mod+Period" = "window-expel-right"
+
+"Mod+Ctrl+Left" = "column-move-left"
+"Mod+Ctrl+Right" = "column-move-right"
+
+"Mod+Shift+Up" = "workspace-previous"
+"Mod+Shift+Down" = "workspace-next"
+
+"Mod+Ctrl+Up" = "window-move-to-workspace-previous"
+"Mod+Ctrl+Down" = "window-move-to-workspace-next"
+
+"Mod+Minus" = "window-modify-width:-0.1"
+"Mod+Equal" = "window-modify-width:+0.1"
+"Mod+Shift+Minus" = "window-modify-width:-0.5"
+"Mod+Shift+Equal" = "window-modify-width:+0.5"
+
+"Mod+Ctrl+C" = "window-center"
+"Mod+Ctrl+P" = "window-toggle-pinned"
+"Mod+Ctrl+F" = "window-toggle-floating"
+"Mod+Alt+F" = "window-focus-switch-floating"
+
+"Mod+Shift+M" = "window-toggle-maximize"
+"Mod+Shift+F" = "window-toggle-fullscreen"
+
+"Mod+1" = "workspace-switch:一"
+"Mod+2" = "workspace-switch:二"
+"Mod+3" = "workspace-switch:三"
+"Mod+4" = "workspace-switch:四"
+"Mod+5" = "workspace-switch:五"
+
+"Mod+Ctrl+O" = "overview-toggle"
+"Mod+C" = "column-center"

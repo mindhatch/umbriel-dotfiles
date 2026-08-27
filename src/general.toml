@@ -1,0 +1,23 @@
+[general]
+autostart = [
+	"dbus-update-activation-environment --all",
+  	"noctalia --daemon &",
+	"noctalia msg brightness-set 69",
+	"noctalia msg keyboard-backlight-set 5",
+  	"kitty -1 --start-as=hidden &",
+	"mpd &",
+  	"pipewire &",
+  	"pipewire-pulse &",
+	"wl-clip-persist -c both &",
+  	"~/.scripts/./autostart &",
+	"umbriel window-focus-left"
+]
+
+xwayland = false
+show_cheatsheet = false
+focus_on_activate = false
+honor_restored_maximize = false
+
+[environment]
+# GTK_THEME = "Adwaita:dark"
+# QT_QPA_PLATFORMTHEME = "qt5ct"
