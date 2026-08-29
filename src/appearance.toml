@@ -1,21 +1,21 @@
 [appearance]
 prefer_no_csd = true
 border_width = 4               # 0-100
-outer_border_width = 16        # 0-100
+outer_border_width = 12        # 0-100
 corner_radius = 16             # 0-100
 
 [appearance.blur]
 enabled = true
 optimized = true
 passes = 3                     # 0-8
-radius = 3                     # 0-100
+radius = 4                     # 0-100
 noise = 0.02                   # 0.0-1.0
-brightness = 0.9               # 0.0-2.0
-contrast = 0.9                 # 0.0-2.0
-saturation = 1.1
+brightness = 1.0               # 0.0-2.0
+contrast = 1.1                 # 0.0-2.0
+saturation = 1.6
 
 [appearance.shadow]
-enabled = false
+enabled = true
 softness = 10                  # 0-200, 0 = hard edge
 offset_x = 0                   # -200 to 200
 offset_y = 0

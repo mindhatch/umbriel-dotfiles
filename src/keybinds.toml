@@ -3,11 +3,15 @@
 # Applications
 
 "Mod+M" = "spawn:sone"
-"Mod+B" = "spawn:helium"
-"Mod+Shift+B" = "spawn:zen"
 "Mod+Z" = "spawn:foot yazi"
+"Mod+W" = "spawn:whisp"
 "Mod+Return" = "spawn:kitty -1"
 "Mod+Semicolon" = "spawn:hyprpicker -a -c"
+"Mod+E" = "spawn:wlrctl window focus title:meow"
+"Mod+R" = "spawn:wlrctl window focus title:rmpc"
+"Mod+D" = "spawn:wlrctl window focus title:concord"
+"Mod+B" = "spawn:wlrctl window focus helium || helium &"
+"Mod+Shift+B" = "spawn:wlrctl window focus zen-default || zen &"
 
 "Mod+Backslash" = "scratchpad-toggle"
 "Mod+Shift+Backslash" = "scratchpad-focus-next"
@@ -18,9 +22,9 @@
 
 "Mod+S" = "spawn:noctalia msg screenshot-region"
 "Mod+Ctrl+S" = "spawn:noctalia msg screenshot-fullscreen"
-"Mod+Shift+D" = "spawn:noctalia msg theme-mode-toggle"
 
 "Mod+Shift+S" = "spawn:noctalia msg settings-toggle"
+"Mod+Shift+D" = "spawn:noctalia msg theme-mode-toggle"
 "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+Shift+Escape" = "spawn:noctalia msg panel-toggle session"
 "Mod+Shift+C" = "spawn:noctalia msg panel-toggle control-center"
@@ -34,15 +38,15 @@
 XF86AudioNext = "spawn:playerctl next"
 XF86AudioPrev = "spawn:playerctl previous"
 XF86AudioPlay = "spawn:playerctl play-pause"
-XF86AudioMute = "spawn:noctalia msg volume-mute"
 
+XF86AudioMute = "spawn:noctalia msg volume-mute"
 XF86AudioRaiseVolume = "spawn:noctalia msg volume-up 5"
 XF86AudioLowerVolume = "spawn:noctalia msg volume-down 5"
 
-XF86MonBrightnessUp = "spawn:brightnessctl set 5%+"
-XF86MonBrightnessDown = "spawn:brightnessctl set 5%-"
-XF86KbdBrightnessUp = "spawn:brightnessctl -d '*kbd_backlight*' set 5%+"
-XF86KbdBrightnessDown = "spawn:brightnessctl -d '*kbd_backlight*' set 5%-"
+XF86MonBrightnessUp = "spawn:noctalia msg brightness-up"
+XF86MonBrightnessDown = "spawn:noctalia msg brightness-down"
+XF86KbdBrightnessUp = "spawn:noctalia msg keyboard-backlight-up"
+XF86KbdBrightnessDown = "spawn:noctalia msg keyboard-backlight-down"
 
 # Workspace and window actions
 
@@ -50,11 +54,12 @@ XF86KbdBrightnessDown = "spawn:brightnessctl -d '*kbd_backlight*' set 5%-"
 
 "Mod+Up" = "window-focus-up"
 "Mod+Down" = "window-focus-down"
-"Mod+Left" = "window-focus-left"
-"Mod+Right" = "window-focus-right"
+"Mod+Left" = "window-focus-previous"
+"Mod+Right" = "window-focus-next"
 
 "Mod+Comma" = "window-consume-left"
 "Mod+Period" = "window-expel-right"
+"Mod+Slash" = "window-consume-or-expel"
 
 "Mod+Ctrl+Left" = "column-move-left"
 "Mod+Ctrl+Right" = "column-move-right"
@@ -70,6 +75,10 @@ XF86KbdBrightnessDown = "spawn:brightnessctl -d '*kbd_backlight*' set 5%-"
 "Mod+Shift+Minus" = "window-modify-width:-0.5"
 "Mod+Shift+Equal" = "window-modify-width:+0.5"
 
+"Mod+Ctrl+Minus" = "window-modify-height:-0.1"
+"Mod+Ctrl+Equal" = "window-modify-height:+0.1"
+
+"Mod+C" = "column-center"
 "Mod+Ctrl+C" = "window-center"
 "Mod+Ctrl+P" = "window-toggle-pinned"
 "Mod+Ctrl+F" = "window-toggle-floating"
@@ -85,4 +94,3 @@ XF86KbdBrightnessDown = "spawn:brightnessctl -d '*kbd_backlight*' set 5%-"
 "Mod+5" = "workspace-switch:五"
 
 "Mod+Ctrl+O" = "overview-toggle"
-"Mod+C" = "column-center"

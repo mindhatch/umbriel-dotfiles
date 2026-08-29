@@ -1,26 +1,22 @@
 [[window_rule]]
-opacity = 0.95
+opacity = 0.9999
 blur = true
 blur_optimized = true
 
 [[window_rule]]
 match.app_id = "(zen.*|helium)"
 default_width = 1.0
+default_workspace = 2
 
 [[window_rule]]
-match.app_id = "^dev.noctalia.Noctalia$"
+match.app_id = "(^foot$|.*satty|.*qView|mpv|^dev.noctalia.Noctalia$|^dev.noctalia.UmbrielSharePicker$)"
 default_floating = true
 default_size = [1536, 915]
+blur_optimized = false
 
 [[window_rule]]
-match.app_id = "(foot|.*satty|.*qView|mpv)"
-default_floating = true
-default_size = [1536, 915]
-
-[[window_rule]]
-match.app_id = "^dev.noctalia.UmbrielSharePicker$"
-default_floating = true
-default_size = [1536, 915]
+match.app_id = "(foot|^dev.noctalia.Noctalia$|^dev.noctalia.UmbrielSharePicker$)"
+opacity = 0.95
 
 [[layer_rule]]
 match.namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"

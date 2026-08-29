@@ -13,6 +13,8 @@ tap = true
 natural_scroll = true
 accel_profile = "adaptive"
 sensitivity = 0.5
+scroll_factor = 3.0
+disable_while_typing = true
 
 [input.mouse]
 accel_profile = "flat"

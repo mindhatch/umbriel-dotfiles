@@ -7,7 +7,8 @@ autostart = [
   	"pipewire &",
   	"pipewire-pulse &",
 	"wl-clip-persist -c both &",
-  	"~/.scripts/./autostart &"
+  	"~/.scripts/./autostart &",
+	"~/.scripts/./rpc-checker &"
 ]
 
 xwayland = false
@@ -16,5 +17,3 @@ focus_on_activate = false
 honor_restored_maximize = false
 
 [environment]
-# GTK_THEME = "Adwaita:dark"
-# QT_QPA_PLATFORMTHEME = "qt5ct"
