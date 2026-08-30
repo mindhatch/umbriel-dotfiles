@@ -1,7 +1,8 @@
 [[window_rule]]
 opacity = 0.9999
 blur = true
-blur_optimized = true
+# blur_optimized = true
+default_focused = true
 
 [[window_rule]]
 match.app_id = "(zen.*|helium)"
@@ -12,7 +13,7 @@ default_workspace = 2
 match.app_id = "(^foot$|.*satty|.*qView|mpv|^dev.noctalia.Noctalia$|^dev.noctalia.UmbrielSharePicker$)"
 default_floating = true
 default_size = [1536, 915]
-blur_optimized = false
+blur_optimized = true
 
 [[window_rule]]
 match.app_id = "(foot|^dev.noctalia.Noctalia$|^dev.noctalia.UmbrielSharePicker$)"

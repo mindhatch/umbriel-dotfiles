@@ -32,7 +32,8 @@ center_underfull_strip = true
 
 [layout.master]
 position = "left"
-default_width_fraction = 0.6
+default_width_fraction = 0.7
+new_on_top = false
 
 [overview]
 zoom = 0.5

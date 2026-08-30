@@ -27,6 +27,7 @@ enabled = false
 [input.cursor]
 theme = "Bibata-Gruvbox"
 size = 32
+follows_focus = true
 hardware_cursor = true
 hide_when_typing = true
 hide_timeout_ms = 0

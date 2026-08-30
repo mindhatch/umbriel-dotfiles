@@ -3,8 +3,8 @@
 # Applications
 
 "Mod+M" = "spawn:sone"
-"Mod+Z" = "spawn:foot yazi"
 "Mod+W" = "spawn:whisp"
+"Mod+Z" = "spawn:foot yazi"
 "Mod+Return" = "spawn:kitty -1"
 "Mod+Semicolon" = "spawn:hyprpicker -a -c"
 "Mod+E" = "spawn:wlrctl window focus title:meow"
@@ -57,9 +57,8 @@ XF86KbdBrightnessDown = "spawn:noctalia msg keyboard-backlight-down"
 "Mod+Left" = "window-focus-previous"
 "Mod+Right" = "window-focus-next"
 
-"Mod+Comma" = "window-consume-left"
-"Mod+Period" = "window-expel-right"
-"Mod+Slash" = "window-consume-or-expel"
+"Mod+Comma" = "window-consume-or-expel-left"
+"Mod+Period" = "window-consume-or-expel-right"
 
 "Mod+Ctrl+Left" = "column-move-left"
 "Mod+Ctrl+Right" = "column-move-right"

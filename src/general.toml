@@ -17,3 +17,4 @@ focus_on_activate = false
 honor_restored_maximize = false
 
 [environment]
+DESKTOP_SHELL = "noctalia"
