@@ -1,14 +1,15 @@
 [general]
 autostart = [
 	"dbus-update-activation-environment --all",
-  	"noctalia --daemon",
-  	"kitty -1 --start-as=hidden &",
+	"brightnessctl set 40%",
+	"brightnessctl set -d 'spi::kbd_backlight' 5",
+	"noctalia --daemon",
+	"kitty -1 --start-as=hidden &",
 	"mpd &",
-  	"pipewire &",
-  	"pipewire-pulse &",
+	"pipewire &",
 	"wl-clip-persist -c both &",
-  	"~/.scripts/./autostart &",
-	"~/.scripts/./rpc-checker &"
+	"~/.scripts/./rpc-checker &",
+  "~/.scripts/./autostart &"
 ]
 
 xwayland = false
@@ -17,4 +18,5 @@ focus_on_activate = false
 honor_restored_maximize = false
 
 [environment]
-DESKTOP_SHELL = "noctalia"
+QT_QPA_PLATFORMTHEME = "gtk3"
+QT_QPA_PLATFORMTHEME_QT6 = "gtk3"

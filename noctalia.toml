@@ -1,20 +1,22 @@
 [colors]
-background = "#272e2aF0"
-text_primary = "#d3cdc3FF"
-text_muted = "#9da49aFF"
-accent_primary = "#8da383FF"
-accent_secondary = "#cb9b7cFF"
-warning = "#7f9193FF"
-error = "#c27979FF"
+background = "#c8aeb9FF"
+text_primary = "#000000FF"
+text_muted = "#52504aFF"
+accent_primary = "#cc7e8bFF"
+accent_secondary = "#000000FF"
+warning = "#d4a2acFF"
+error = "#964860FF"
+insert_hint = "#d4a2ac80"
+backdrop = "#c8aeb9FF"
 
-[appearance]
-border_focused = "#8da383FF"
-border_unfocused = "#272e2aFF"
-scratchpad_border_focused = "#7f9193FF"
-scratchpad_border_unfocused = "#25383aFF"
-outer_border_color = "#1e2320FF"
-insert_hint_color = "#7f919380"
-backdrop_color = "#272e2aFF"
+[colors.border]
+focused = "#cc7e8bFF"
+unfocused = "#c8aeb9FF"
+scratchpad_focused = "#d4a2acFF"
+scratchpad_unfocused = "#e4cdd2FF"
+outer = "#dac6c8FF"
 
-[overview]
-background_tint = "#1e232088"
+[colors.overview]
+background_tint = "#dac6c888"
+badge = "#cc7e8bFF"
+workspace_background = "#dac6c8FF"

@@ -1,26 +1,39 @@
 [[window_rule]]
-opacity = 0.9999
+opacity = 0.95
 blur = true
 # blur_optimized = true
 default_focused = true
 
 [[window_rule]]
 match.app_id = "(zen.*|helium)"
+opacity = 1.0
 default_width = 1.0
 default_workspace = 2
 
 [[window_rule]]
+match.app_id = "codium"
+default_width = 1.0
+default_workspace = 4
+
+[[window_rule]]
+match.app_id = "(.*satty|.*qView|mpv)"
+opacity = 1.0
+
+[[window_rule]]
 match.app_id = "(^foot$|.*satty|.*qView|mpv|^dev.noctalia.Noctalia$|^dev.noctalia.UmbrielSharePicker$)"
 default_floating = true
-default_size = [1536, 915]
+default_size = [1400, 915]
 blur_optimized = true
 
 [[window_rule]]
-match.app_id = "(foot|^dev.noctalia.Noctalia$|^dev.noctalia.UmbrielSharePicker$)"
-opacity = 0.95
+match.title = "termfilechooser"
+default_floating = true
+default_size = [1536, 915]
+blur_optimized = true
 
 [[layer_rule]]
 match.namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
 blur = true
 blur_optimized = false
 blur_ignore_alpha = 0.5
+blur_popups = true

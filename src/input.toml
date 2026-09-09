@@ -4,7 +4,7 @@ middle_click_paste = false
 [input.keyboard]
 layout = ""
 variant = ""
-options = "caps:swapescape,shift:both_capslock_cancel"
+options = "caps:swapescape,shift:both_capslock"
 repeat_rate = 40               # 0-1000 Hz
 repeat_delay = 300             # 0-10000 ms
 
@@ -13,8 +13,9 @@ tap = true
 natural_scroll = true
 accel_profile = "adaptive"
 sensitivity = 0.5
-scroll_factor = 3.0
+scroll_factor = 2.5
 disable_while_typing = true
+disable_on_external_mouse = false
 
 [input.mouse]
 accel_profile = "flat"
@@ -25,8 +26,8 @@ scroll_wheel_step = 60
 enabled = false
 
 [input.cursor]
-theme = "Bibata-Gruvbox"
-size = 32
+theme = "BrushBuddy"
+size = 64
 follows_focus = true
 hardware_cursor = true
 hide_when_typing = true
