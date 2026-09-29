@@ -2,18 +2,19 @@
 
 # Applications
 
-"Mod+M" = "spawn:sone"
-"Mod+W" = "spawn:whisp"
 "Mod+Z" = "spawn:foot yazi"
 "Mod+Return" = "spawn:kitty -1"
 "Mod+Ctrl+Return" = "spawn:foot"
 "Mod+Semicolon" = "spawn:hyprpicker -a -c"
-"Mod+E" = "spawn:wlrctl window focus title:meow"
+"Mod+E" = "spawn:wlrctl window focus title:sig"
 "Mod+R" = "spawn:wlrctl window focus title:rmpc"
 "Mod+D" = "spawn:wlrctl window focus title:concord"
-"Mod+B" = "spawn:wlrctl window focus helium || helium &"
-"Mod+V" = "spawn:wlrctl window focus app-id:codium || codium &"
-"Mod+Shift+B" = "spawn:wlrctl window focus zen-default || zen &"
+"Mod+Shift+D" = "spawn:wlrctl window focus title:Serein || serein &"
+"Mod+X" = "spawn:wlrctl window focus helium || helium &"
+"Mod+C" = "spawn:wlrctl window focus app-id:codium || codium &"
+"Mod+Shift+X" = "spawn:wlrctl window focus zen-default || zen &"
+
+"Mod+Ctrl+Alt+F" = "spawn:firefox"
 
 "Mod+Backslash" = "scratchpad-toggle"
 "Mod+Shift+Backslash" = "scratchpad-focus-next"
@@ -25,16 +26,16 @@
 "Mod+S" = "spawn:noctalia msg screenshot-region"
 "Mod+Ctrl+S" = "spawn:noctalia msg screenshot-fullscreen"
 
-"Mod+Shift+1" = "spawn:~/.scripts/wallpaper-switch umbrella"
-"Mod+Shift+2" = "spawn:~/.scripts/wallpaper-switch umbrella-color"
-"Mod+Shift+3" = "spawn:~/.scripts/wallpaper-switch daisuke-braids"
-"Mod+Shift+4" = "spawn:~/.scripts/wallpaper-switch daisuke-petals"
+"Mod+Shift+1" = "spawn:~/.scripts/wallpaper-switch daisuke-petals"
+"Mod+Shift+2" = "spawn:~/.scripts/wallpaper-switch daisuke-braids"
+"Mod+Shift+3" = "spawn:~/.scripts/wallpaper-switch daisuke-umbrella-color"
+"Mod+Shift+4" = "spawn:~/.scripts/wallpaper-switch daisuke-umbrella-bw"
+
 "Mod+Shift+S" = "spawn:noctalia msg settings-toggle"
-"Mod+Shift+D" = "spawn:noctalia msg theme-mode-toggle"
 "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+Shift+Escape" = "spawn:noctalia msg panel-toggle session"
 "Mod+Shift+C" = "spawn:noctalia msg panel-toggle control-center"
-"Mod+Shift+V" = "spawn:noctalia msg panel-toggle panel-toggle clipboard"
+"Mod+Shift+V" = "spawn:noctalia msg panel-toggle clipboard"
 "Mod+Shift+N" = "spawn:noctalia msg panel-toggle control-center notifications"
 "Mod+Ctrl+R" = "spawn:noctalia msg plugin noctalia/screen_recorder:service all toggle portal"
 "Mod+Shift+R" = "spawn:noctalia msg plugin noctalia/screen_recorder:service all toggle focused"
@@ -49,12 +50,12 @@ XF86AudioMute = "spawn:noctalia msg volume-mute"
 XF86AudioRaiseVolume = "spawn:noctalia msg volume-up 5"
 XF86AudioLowerVolume = "spawn:noctalia msg volume-down 5"
 
-# XF86MonBrightnessUp = "spawn:noctalia msg brightness-up"
-# XF86MonBrightnessDown = "spawn:noctalia msg brightness-down"
+XF86MonBrightnessUp = "spawn:noctalia msg brightness-up"
+XF86MonBrightnessDown = "spawn:noctalia msg brightness-down"
 XF86KbdBrightnessUp = "spawn:noctalia msg keyboard-backlight-up"
 XF86KbdBrightnessDown = "spawn:noctalia msg keyboard-backlight-down"
 
-# Workspace and window actions
+# Window and workspace actions
 
 "Mod+Shift+Q" = "window-close"
 
@@ -71,28 +72,27 @@ XF86KbdBrightnessDown = "spawn:noctalia msg keyboard-backlight-down"
 "Mod+Ctrl+Left" = "column-move-left"
 "Mod+Ctrl+Right" = "column-move-right"
 
-"Mod+Shift+Up" = "workspace-previous"
-"Mod+Shift+Down" = "workspace-next"
+"Mod+Minus" = "window-modify-width-right:-0.1"
+"Mod+Equal" = "window-modify-width-right:+0.1"
+"Mod+Shift+Minus" = "window-modify-width-right:-0.5"
+"Mod+Shift+Equal" = "window-modify-width-right:+0.5"
 
-"Mod+Alt+Up" = "window-move-to-workspace-previous"
-"Mod+Alt+Down" = "window-move-to-workspace-next"
+"Mod+Ctrl+Minus" = "window-modify-height-down:-0.05"
+"Mod+Ctrl+Equal" = "window-modify-height-down:+0.05"
 
-"Mod+Minus" = "window-modify-width:-0.1"
-"Mod+Equal" = "window-modify-width:+0.1"
-"Mod+Shift+Minus" = "window-modify-width:-0.5"
-"Mod+Shift+Equal" = "window-modify-width:+0.5"
-
-"Mod+Ctrl+Minus" = "window-modify-height:-0.05"
-"Mod+Ctrl+Equal" = "window-modify-height:+0.05"
-
-"Mod+C" = "column-center"
-"Mod+Ctrl+C" = "window-center"
+"Mod+Ctrl+C" = "column-center"
 "Mod+Ctrl+P" = "window-toggle-pinned"
 "Mod+Ctrl+F" = "window-toggle-floating"
 "Mod+Alt+F" = "window-focus-switch-floating"
 
 "Mod+Shift+M" = "window-toggle-maximize"
 "Mod+Shift+F" = "window-toggle-fullscreen"
+
+"Mod+Alt+Up" = "window-move-to-workspace-previous"
+"Mod+Alt+Down" = "window-move-to-workspace-next"
+
+"Mod+Shift+Up" = "workspace-previous"
+"Mod+Shift+Down" = "workspace-next"
 
 "Mod+1" = "workspace-switch:一"
 "Mod+2" = "workspace-switch:二"

@@ -4,19 +4,20 @@ autostart = [
 	"brightnessctl set 40%",
 	"brightnessctl set -d 'spi::kbd_backlight' 5",
 	"noctalia --daemon",
+	"kanata &",	
 	"kitty -1 --start-as=hidden &",
 	"mpd &",
 	"pipewire &",
-	"wl-clip-persist -c both &",
 	"~/.scripts/./rpc-checker &",
-  "~/.scripts/./autostart &"
+  	"~/.scripts/./autostart &"
 ]
 
 xwayland = false
 show_cheatsheet = false
-focus_on_activate = false
+focus_on_activate = true
 honor_restored_maximize = false
 
 [environment]
+QT_QPA_PLATFORM = "wayland"
 QT_QPA_PLATFORMTHEME = "gtk3"
 QT_QPA_PLATFORMTHEME_QT6 = "gtk3"

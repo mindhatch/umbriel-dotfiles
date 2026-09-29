@@ -4,7 +4,7 @@ middle_click_paste = false
 [input.keyboard]
 layout = ""
 variant = ""
-options = "caps:swapescape,shift:both_capslock"
+options = "shift:both_capslock"
 repeat_rate = 40               # 0-1000 Hz
 repeat_delay = 300             # 0-10000 ms
 
@@ -27,7 +27,7 @@ enabled = false
 
 [input.cursor]
 theme = "BrushBuddy"
-size = 64
+size = 48
 follows_focus = true
 hardware_cursor = true
 hide_when_typing = true
